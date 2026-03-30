@@ -18,6 +18,9 @@ fn main() {
             .expect("Failed to input");
 
         //Convert a string to a integer
+
+        //let guess:u8 = guess.trim().parse().expect("Failed to convert"); --> Break when input not a number
+        
         let guess: u8 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
